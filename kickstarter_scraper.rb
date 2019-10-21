@@ -9,7 +9,7 @@ def create_project_hash
   kickstarter.each { |post|
     projects[post.css("h2.bbcard_name strong a").text] = "Hello"
   }
+  binding.pry
   projects
 end
 create_project_hash
-binding.pry
