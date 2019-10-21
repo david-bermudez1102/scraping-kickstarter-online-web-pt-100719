@@ -7,6 +7,6 @@ def create_project_hash
   projects = {}
 
   kickstarter.each { |post|
-    projects.[post.css("h2.bbcard_name strong a").text] = "Hello"
+    projects[post.css("h2.bbcard_name strong a").text] = "Hello"
   }
 end
