@@ -8,7 +8,7 @@ def create_project_hash
   final_hash = {}
 
   projects.each { |project|
-    final_hash[post.css("h2.bbcard_name strong a").text] = "Hello"
+    final_hash[project.css("h2.bbcard_name strong a").text] = "Hello"
   }
   binding.pry
   projects
