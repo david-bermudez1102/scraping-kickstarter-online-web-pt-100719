@@ -4,7 +4,8 @@ require "pry"
 def create_project_hash
   html = File.read('fixtures/kickstarter.html')
   kickstarter = Nokogiri::HTML(html)
-  projects = {}
+  projects = "li.project.grid_4"
+  final_hash = {}
 
   kickstarter.each { |post|
     projects[post.css("h2.bbcard_name strong a").text] = "Hello"
