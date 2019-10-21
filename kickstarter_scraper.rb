@@ -7,8 +7,8 @@ def create_project_hash
   projects = kickstarter.css("li.project.grid_4")
   final_hash = {}
 
-  pprojects.each { |project|
-    projects[post.css("h2.bbcard_name strong a").text] = "Hello"
+  projects.each { |project|
+    final_hash[post.css("h2.bbcard_name strong a").text] = "Hello"
   }
   binding.pry
   projects
