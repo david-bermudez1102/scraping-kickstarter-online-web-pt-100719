@@ -11,6 +11,6 @@ def create_project_hash
     final_hash[project.css("h2.bbcard_name strong a").text] = "Hello"
   }
   binding.pry
-  projects
+  final_hash
 end
 create_project_hash
